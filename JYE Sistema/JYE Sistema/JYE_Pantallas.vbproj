@@ -1,0 +1,644 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7EBAB078-6665-416C-ACE4-4167F1809A43}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>JYE_Sistema.My.MyApplication</StartupObject>
+    <RootNamespace>JYE_Sistema</RootNamespace>
+    <AssemblyName>JYE_Sistema</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>JYE_Sistema.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>JYE_Sistema.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\Extras\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="EQATEC.Analytics.Monitor, Version=3.2.1.0, Culture=neutral, PublicKeyToken=213c7c68adb58a17, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2016.1.216.40\EQATEC.Analytics.Monitor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Telerik.WinControls, Version=2016.1.216.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2016.1.216.40\Telerik.WinControls.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Analytics, Version=2016.1.216.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2016.1.216.40\Telerik.WinControls.Analytics.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.ChartView, Version=2016.1.216.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2016.1.216.40\Telerik.WinControls.ChartView.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.GridView, Version=2016.1.216.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2016.1.216.40\Telerik.WinControls.GridView.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.PdfViewer, Version=2016.1.216.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2016.1.216.40\Telerik.WinControls.PdfViewer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.PivotGrid, Version=2016.1.216.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2016.1.216.40\Telerik.WinControls.PivotGrid.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RadChart, Version=2016.1.216.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2016.1.216.40\Telerik.WinControls.RadChart.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RadDiagram, Version=2016.1.216.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2016.1.216.40\Telerik.WinControls.RadDiagram.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RadDock, Version=2016.1.216.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2016.1.216.40\Telerik.WinControls.RadDock.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RadMarkupEditor, Version=2016.1.216.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2016.1.216.40\Telerik.WinControls.RadMarkupEditor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RichTextBox, Version=2016.1.216.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2016.1.216.40\Telerik.WinControls.RichTextBox.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RichTextEditor, Version=2016.1.216.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2016.1.216.40\Telerik.WinControls.RichTextEditor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Scheduler, Version=2016.1.216.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2016.1.216.40\Telerik.WinControls.Scheduler.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.SpellChecker, Version=2016.1.216.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2016.1.216.40\Telerik.WinControls.SpellChecker.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Aqua, Version=2016.1.216.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2016.1.216.40\Telerik.WinControls.Themes.Aqua.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Breeze, Version=2016.1.216.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2016.1.216.40\Telerik.WinControls.Themes.Breeze.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Desert, Version=2016.1.216.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2016.1.216.40\Telerik.WinControls.Themes.Desert.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.HighContrastBlack, Version=2016.1.216.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2016.1.216.40\Telerik.WinControls.Themes.HighContrastBlack.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2007Black, Version=2016.1.216.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2016.1.216.40\Telerik.WinControls.Themes.Office2007Black.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2007Silver, Version=2016.1.216.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2016.1.216.40\Telerik.WinControls.Themes.Office2007Silver.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2010Black, Version=2016.1.216.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2016.1.216.40\Telerik.WinControls.Themes.Office2010Black.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2010Blue, Version=2016.1.216.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2016.1.216.40\Telerik.WinControls.Themes.Office2010Blue.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2010Silver, Version=2016.1.216.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2016.1.216.40\Telerik.WinControls.Themes.Office2010Silver.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2013Dark, Version=2016.1.216.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2016.1.216.40\Telerik.WinControls.Themes.Office2013Dark.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2013Light, Version=2016.1.216.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2016.1.216.40\Telerik.WinControls.Themes.Office2013Light.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.TelerikMetro, Version=2016.1.216.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2016.1.216.40\Telerik.WinControls.Themes.TelerikMetro.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.TelerikMetroBlue, Version=2016.1.216.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2016.1.216.40\Telerik.WinControls.Themes.TelerikMetroBlue.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.TelerikMetroTouch, Version=2016.1.216.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2016.1.216.40\Telerik.WinControls.Themes.TelerikMetroTouch.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.VisualStudio2012Dark, Version=2016.1.216.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2016.1.216.40\Telerik.WinControls.Themes.VisualStudio2012Dark.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.VisualStudio2012Light, Version=2016.1.216.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2016.1.216.40\Telerik.WinControls.Themes.VisualStudio2012Light.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Windows7, Version=2016.1.216.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2016.1.216.40\Telerik.WinControls.Themes.Windows7.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Windows8, Version=2016.1.216.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2016.1.216.40\Telerik.WinControls.Themes.Windows8.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI, Version=2016.1.216.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2016.1.216.40\Telerik.WinControls.UI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Core, Version=2016.1.212.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2016.1.216.40\Telerik.Windows.Documents.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Fixed, Version=2016.1.212.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2016.1.216.40\Telerik.Windows.Documents.Fixed.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Flow, Version=2016.1.212.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2016.1.216.40\Telerik.Windows.Documents.Flow.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Flow.FormatProviders.Pdf, Version=2016.1.212.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2016.1.216.40\Telerik.Windows.Documents.Flow.FormatProviders.Pdf.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Spreadsheet, Version=2016.1.212.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2016.1.216.40\Telerik.Windows.Documents.Spreadsheet.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml, Version=2016.1.212.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2016.1.216.40\Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf, Version=2016.1.212.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2016.1.216.40\Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Zip, Version=2016.1.212.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2016.1.216.40\Telerik.Windows.Zip.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="TelerikCommon, Version=2016.1.216.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2016.1.216.40\TelerikCommon.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="TelerikData, Version=2016.1.216.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2016.1.216.40\TelerikData.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="TelerikExport, Version=2016.1.216.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2016.1.216.40\TelerikExport.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.vb" />
+    <Compile Include="Pantalla_Almacen\Almacen_Principal.Designer.vb">
+      <DependentUpon>Almacen_Principal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pantalla_Almacen\Almacen_Principal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantalla_Almacen\Categorias\Categorias_Modal.Designer.vb">
+      <DependentUpon>Categorias_Modal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pantalla_Almacen\Categorias\Categorias_Modal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantalla_Almacen\Ingreso de Productos\Ingreso_Principal.Designer.vb">
+      <DependentUpon>Ingreso_Principal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pantalla_Almacen\Ingreso de Productos\Ingreso_Principal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantalla_Almacen\Categorias\Categorias.Designer.vb">
+      <DependentUpon>Categorias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pantalla_Almacen\Categorias\Categorias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantalla_Almacen\Equipos\Equipos Principal.Designer.vb">
+      <DependentUpon>Equipos Principal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pantalla_Almacen\Equipos\Equipos Principal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantalla_Almacen\Equipos\Equipos_Modal.Designer.vb">
+      <DependentUpon>Equipos_Modal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pantalla_Almacen\Equipos\Equipos_Modal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantalla_Almacen\Productos\Productos_Modal.Designer.vb">
+      <DependentUpon>Productos_Modal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pantalla_Almacen\Productos\Productos_Modal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantalla_Almacen\Productos\Productos_Principal.Designer.vb">
+      <DependentUpon>Productos_Principal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pantalla_Almacen\Productos\Productos_Principal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantalla_Almacen\Salida de Productos\Salida_Principal.Designer.vb">
+      <DependentUpon>Salida_Principal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pantalla_Almacen\Salida de Productos\Salida_Principal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantalla_Contabilidad\Pantalla Gastos\Gastos_Modal.Designer.vb">
+      <DependentUpon>Gastos_Modal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pantalla_Contabilidad\Pantalla Gastos\Gastos_Modal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantalla_Contabilidad\Contabilidad_Principal.Designer.vb">
+      <DependentUpon>Contabilidad_Principal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pantalla_Contabilidad\Contabilidad_Principal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantalla_Contabilidad\Pantalla Gastos\Gastos_Principal.Designer.vb">
+      <DependentUpon>Gastos_Principal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pantalla_Contabilidad\Pantalla Gastos\Gastos_Principal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantalla_Contabilidad\Pantalla Gastos\Modal.Designer.vb">
+      <DependentUpon>Modal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pantalla_Contabilidad\Pantalla Gastos\Modal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantalla_Contabilidad\Pantalla_Ventas\Ventas_Modal.Designer.vb">
+      <DependentUpon>Ventas_Modal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pantalla_Contabilidad\Pantalla_Ventas\Ventas_Modal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantalla_Contabilidad\Pantalla_Ventas\Ventas_Principal.Designer.vb">
+      <DependentUpon>Ventas_Principal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pantalla_Contabilidad\Pantalla_Ventas\Ventas_Principal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantalla_Directorio\Clientes\Agregar_Cuenta.Designer.vb">
+      <DependentUpon>Agregar_Cuenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pantalla_Directorio\Clientes\Agregar_Cuenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantalla_Directorio\Clientes\Buscar_Cliente.Designer.vb">
+      <DependentUpon>Buscar_Cliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pantalla_Directorio\Clientes\Buscar_Cliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantalla_Directorio\Clientes\Clientes_Principal.Designer.vb">
+      <DependentUpon>Clientes_Principal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pantalla_Directorio\Clientes\Clientes_Principal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantalla_Directorio\Directorio_Principal.Designer.vb">
+      <DependentUpon>Directorio_Principal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pantalla_Directorio\Directorio_Principal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantalla_Directorio\Clientes\Cliente_Modal.Designer.vb">
+      <DependentUpon>Cliente_Modal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pantalla_Directorio\Clientes\Cliente_Modal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantalla_Empleados\Empleados_Modal.Designer.vb">
+      <DependentUpon>Empleados_Modal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pantalla_Empleados\Empleados_Modal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantalla_Empleados\Empleados_Principal.Designer.vb">
+      <DependentUpon>Empleados_Principal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pantalla_Empleados\Empleados_Principal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantalla_Contabilidad\Extras\Vehiculos\Vehiculos_Modal.Designer.vb">
+      <DependentUpon>Vehiculos_Modal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pantalla_Contabilidad\Extras\Vehiculos\Vehiculos_Modal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantalla_Login\Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pantalla_Login\Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantalla_Empleados\Pantalla_Tareos\Tareos_Modal.Designer.vb">
+      <DependentUpon>Tareos_Modal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pantalla_Empleados\Pantalla_Tareos\Tareos_Modal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantalla_Empleados\Pantalla_Tareos\Tareos_Principal.Designer.vb">
+      <DependentUpon>Tareos_Principal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pantalla_Empleados\Pantalla_Tareos\Tareos_Principal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantalla_Principal\MDI_Principal.Designer.vb">
+      <DependentUpon>MDI_Principal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pantalla_Principal\MDI_Principal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantalla_Reportes\Reportes_Principal.Designer.vb">
+      <DependentUpon>Reportes_Principal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pantalla_Reportes\Reportes_Principal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantalla_Contabilidad\Extras\Vehiculos\Vehiculos_Principal.Designer.vb">
+      <DependentUpon>Vehiculos_Principal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pantalla_Contabilidad\Extras\Vehiculos\Vehiculos_Principal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Service References\ServiceReference_J_E\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Pantalla_Almacen\Almacen_Principal.resx">
+      <DependentUpon>Almacen_Principal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantalla_Almacen\Categorias\Categorias_Modal.resx">
+      <DependentUpon>Categorias_Modal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantalla_Almacen\Ingreso de Productos\Ingreso_Principal.resx">
+      <DependentUpon>Ingreso_Principal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantalla_Almacen\Categorias\Categorias.resx">
+      <DependentUpon>Categorias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantalla_Almacen\Equipos\Equipos Principal.resx">
+      <DependentUpon>Equipos Principal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantalla_Almacen\Equipos\Equipos_Modal.resx">
+      <DependentUpon>Equipos_Modal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantalla_Almacen\Productos\Productos_Modal.resx">
+      <DependentUpon>Productos_Modal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantalla_Almacen\Productos\Productos_Principal.resx">
+      <DependentUpon>Productos_Principal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantalla_Almacen\Salida de Productos\Salida_Principal.resx">
+      <DependentUpon>Salida_Principal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantalla_Contabilidad\Pantalla Gastos\Gastos_Modal.resx">
+      <DependentUpon>Gastos_Modal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantalla_Contabilidad\Contabilidad_Principal.resx">
+      <DependentUpon>Contabilidad_Principal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="Pantalla_Contabilidad\Pantalla Gastos\Gastos_Principal.resx">
+      <DependentUpon>Gastos_Principal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantalla_Contabilidad\Pantalla Gastos\Modal.resx">
+      <DependentUpon>Modal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantalla_Contabilidad\Pantalla_Ventas\Ventas_Modal.resx">
+      <DependentUpon>Ventas_Modal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantalla_Contabilidad\Pantalla_Ventas\Ventas_Principal.resx">
+      <DependentUpon>Ventas_Principal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantalla_Directorio\Clientes\Agregar_Cuenta.resx">
+      <DependentUpon>Agregar_Cuenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantalla_Directorio\Clientes\Buscar_Cliente.resx">
+      <DependentUpon>Buscar_Cliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantalla_Directorio\Clientes\Clientes_Principal.resx">
+      <DependentUpon>Clientes_Principal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantalla_Directorio\Directorio_Principal.resx">
+      <DependentUpon>Directorio_Principal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantalla_Directorio\Clientes\Cliente_Modal.resx">
+      <DependentUpon>Cliente_Modal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantalla_Empleados\Empleados_Modal.resx">
+      <DependentUpon>Empleados_Modal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantalla_Empleados\Empleados_Principal.resx">
+      <DependentUpon>Empleados_Principal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantalla_Contabilidad\Extras\Vehiculos\Vehiculos_Modal.resx">
+      <DependentUpon>Vehiculos_Modal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantalla_Login\Login.dje-NE.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantalla_Login\Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Pantalla_Empleados\Pantalla_Tareos\Tareos_Modal.resx">
+      <DependentUpon>Tareos_Modal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantalla_Empleados\Pantalla_Tareos\Tareos_Principal.resx">
+      <DependentUpon>Tareos_Principal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantalla_Principal\MDI_Principal.resx">
+      <DependentUpon>MDI_Principal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantalla_Reportes\Reportes_Principal.resx">
+      <DependentUpon>Reportes_Principal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantalla_Contabilidad\Extras\Vehiculos\Vehiculos_Principal.resx">
+      <DependentUpon>Vehiculos_Principal.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="Service References\ServiceReference_J_E\JYE_Sistema.ServiceReference_J_E.ClasesBANCOS.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference_J_E\JYE_Sistema.ServiceReference_J_E.ClasesDET_PERSONAS.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference_J_E\JYE_Sistema.ServiceReference_J_E.ClasesMONEDAS.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference_J_E\JYE_Sistema.ServiceReference_J_E.ClasesNACIONALIDADES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference_J_E\JYE_Sistema.ServiceReference_J_E.CompositeType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference_J_E\Service1.wsdl" />
+    <None Include="Service References\ServiceReference_J_E\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference_J_E\Service11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference_J_E\Service12.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference_J_E\Service13.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\BL\BL.vbproj">
+      <Project>{2dbd6a7a-2c60-43f7-9787-e916254f2166}</Project>
+      <Name>BL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ServiceReference_J_E\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference_J_E\Service1.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference_J_E\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference_J_E\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference_J_E\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="JYE_ico.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,91 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "JYE_Pantallas", "JYE Sistema\JYE_Pantallas.vbproj", "{7EBAB078-6665-416C-ACE4-4167F1809A43}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6A203DFD-6F86-48CF-BCA7-35032DF55549} = {6A203DFD-6F86-48CF-BCA7-35032DF55549}
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "BL", "BL\BL.vbproj", "{2DBD6A7A-2C60-43F7-9787-E916254F2166}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ClasesBase", "ClasesBase\ClasesBase.vbproj", "{CFAA2750-F773-43DC-91EA-0F78AE2D1FB0}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DC", "DC\DC.vbproj", "{31143CBA-A9AA-402A-9A09-0DB57AF940B4}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WCF_J_E", "WCF_J_E\WCF_J_E.vbproj", "{6A203DFD-6F86-48CF-BCA7-35032DF55549}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7EBAB078-6665-416C-ACE4-4167F1809A43}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{7EBAB078-6665-416C-ACE4-4167F1809A43}.Debug|Any CPU.Build.0 = Debug|x86
+		{7EBAB078-6665-416C-ACE4-4167F1809A43}.Debug|x86.ActiveCfg = Debug|x86
+		{7EBAB078-6665-416C-ACE4-4167F1809A43}.Debug|x86.Build.0 = Debug|x86
+		{7EBAB078-6665-416C-ACE4-4167F1809A43}.Release|Any CPU.ActiveCfg = Release|x86
+		{7EBAB078-6665-416C-ACE4-4167F1809A43}.Release|x86.ActiveCfg = Release|x86
+		{7EBAB078-6665-416C-ACE4-4167F1809A43}.Release|x86.Build.0 = Release|x86
+		{2DBD6A7A-2C60-43F7-9787-E916254F2166}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DBD6A7A-2C60-43F7-9787-E916254F2166}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DBD6A7A-2C60-43F7-9787-E916254F2166}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2DBD6A7A-2C60-43F7-9787-E916254F2166}.Debug|x86.Build.0 = Debug|Any CPU
+		{2DBD6A7A-2C60-43F7-9787-E916254F2166}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DBD6A7A-2C60-43F7-9787-E916254F2166}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DBD6A7A-2C60-43F7-9787-E916254F2166}.Release|x86.ActiveCfg = Release|Any CPU
+		{2DBD6A7A-2C60-43F7-9787-E916254F2166}.Release|x86.Build.0 = Release|Any CPU
+		{CFAA2750-F773-43DC-91EA-0F78AE2D1FB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFAA2750-F773-43DC-91EA-0F78AE2D1FB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFAA2750-F773-43DC-91EA-0F78AE2D1FB0}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CFAA2750-F773-43DC-91EA-0F78AE2D1FB0}.Debug|x86.Build.0 = Debug|Any CPU
+		{CFAA2750-F773-43DC-91EA-0F78AE2D1FB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFAA2750-F773-43DC-91EA-0F78AE2D1FB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFAA2750-F773-43DC-91EA-0F78AE2D1FB0}.Release|x86.ActiveCfg = Release|Any CPU
+		{CFAA2750-F773-43DC-91EA-0F78AE2D1FB0}.Release|x86.Build.0 = Release|Any CPU
+		{31143CBA-A9AA-402A-9A09-0DB57AF940B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31143CBA-A9AA-402A-9A09-0DB57AF940B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31143CBA-A9AA-402A-9A09-0DB57AF940B4}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{31143CBA-A9AA-402A-9A09-0DB57AF940B4}.Debug|x86.Build.0 = Debug|Any CPU
+		{31143CBA-A9AA-402A-9A09-0DB57AF940B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31143CBA-A9AA-402A-9A09-0DB57AF940B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31143CBA-A9AA-402A-9A09-0DB57AF940B4}.Release|x86.ActiveCfg = Release|Any CPU
+		{31143CBA-A9AA-402A-9A09-0DB57AF940B4}.Release|x86.Build.0 = Release|Any CPU
+		{6A203DFD-6F86-48CF-BCA7-35032DF55549}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A203DFD-6F86-48CF-BCA7-35032DF55549}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A203DFD-6F86-48CF-BCA7-35032DF55549}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6A203DFD-6F86-48CF-BCA7-35032DF55549}.Debug|x86.Build.0 = Debug|Any CPU
+		{6A203DFD-6F86-48CF-BCA7-35032DF55549}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A203DFD-6F86-48CF-BCA7-35032DF55549}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A203DFD-6F86-48CF-BCA7-35032DF55549}.Release|x86.ActiveCfg = Release|Any CPU
+		{6A203DFD-6F86-48CF-BCA7-35032DF55549}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://darylmarcapura1.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = BL\\BL.vbproj
+		SccProjectName1 = BL
+		SccLocalPath1 = BL
+		SccProjectUniqueName2 = ClasesBase\\ClasesBase.vbproj
+		SccProjectName2 = ClasesBase
+		SccLocalPath2 = ClasesBase
+		SccProjectUniqueName3 = DC\\DC.vbproj
+		SccProjectName3 = DC
+		SccLocalPath3 = DC
+		SccProjectUniqueName4 = JYE\u0020Sistema\\JYE_Pantallas.vbproj
+		SccProjectName4 = JYE\u0020Sistema
+		SccLocalPath4 = JYE\u0020Sistema
+		SccProjectUniqueName5 = WCF_J_E\\WCF_J_E.vbproj
+		SccProjectName5 = WCF_J_E
+		SccLocalPath5 = WCF_J_E
+	EndGlobalSection
+EndGlobal
